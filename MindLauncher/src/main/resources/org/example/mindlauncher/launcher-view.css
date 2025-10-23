@@ -1,0 +1,47 @@
+.main_pane {
+    -fx-background-color: #FFB6C1;
+}
+
+.launcher_pane {
+    -fx-background-color: #800000;
+    -fx-background-radius: 15px;
+    -fx-padding: 20px;
+
+    -fx-border-color: #228B22;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+}
+
+.launcher_pane:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0.1, 1, 1);
+}
+
+.game_pane {
+    -fx-background-color: #4B0082;
+    -fx-background-radius: 10px;
+    -fx-padding: 15px;
+
+    -fx-border-color: #8B4513;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}
+
+.game_pane:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0.1, 1, 1);
+}
+
+.launcher_labels {
+    -fx-text-fill: #DAA520;
+}
+
+.launcher_buttons {
+    -fx-background-color: #FF1493;
+    -fx-text-fill: #DAA520;
+}
+
+.launcher_buttons:hover {
+    -fx-background-color: #FF69B4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0.1, 1, 1);
+    -fx-text-fill: #4B2E05;
+    -fx-font-family: "Bold Italic Art";
+}

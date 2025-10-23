@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="main_pane" prefHeight="500.0" prefWidth="1000.0" styleClass="main_pane" stylesheets="@launcher-view.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mindlauncher.MainController">
+   <children>
+      <Pane fx:id="views_pane" layoutY="6.0" prefHeight="500.0" prefWidth="200.0" styleClass="launcher_pane" stylesheets="@launcher-view.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="infoViewButton" layoutX="68.0" layoutY="129.0" mnemonicParsing="false" onAction="#initialize" styleClass="launcher_buttons" stylesheets="@launcher-view.css" text="About Game">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="74.0" layoutY="283.0" mnemonicParsing="false" onAction="#initialize" styleClass="launcher_buttons" stylesheets="@launcher-view.css" text="Exit">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="game_pane" layoutX="200.0" prefHeight="500.0" prefWidth="801.0" styleClass="game_pane" stylesheets="@launcher-view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="launcherButton" layoutX="348.0" layoutY="322.0" mnemonicParsing="false" onAction="#initialize" styleClass="launcher_buttons" stylesheets="@launcher-view.css" text="Ankr Decay">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="130.0" layoutY="81.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text="Welcome to Mind Launcher">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="152.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text="Press for &quot;Ankr Decay&quot; button for start game">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="212.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text="Press for &quot;About Game&quot; button for learning information about game">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

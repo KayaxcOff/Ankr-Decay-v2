@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="main_pane" prefHeight="500.0" prefWidth="1000.0" styleClass="main_pane" stylesheets="@launcher-view.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mindlauncher.GameController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="200.0" styleClass="launcher_pane" stylesheets="@launcher-view.css">
+         <children>
+            <Button fx:id="launchButton" layoutX="65.0" layoutY="121.0" mnemonicParsing="false" styleClass="launcher_buttons" stylesheets="@launcher-view.css" text="Launch Game">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="74.0" layoutY="269.0" mnemonicParsing="false" styleClass="launcher_buttons" stylesheets="@launcher-view.css" text="Exit">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="200.0" prefHeight="500.0" prefWidth="800.0" styleClass="game_pane" stylesheets="@launcher-view.css">
+         <children>
+            <Label layoutX="34.0" layoutY="80.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text=">> For make Hero Champion move, use WASD">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="134.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text=">> For make Villain Champion move, use Right, Left, Up and Down">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="233.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text=">> You should press 1 for using a Hero ability again after used a Hero ability">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="274.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text=">> You should press 9 for using a Villain ability again after using a Villain ability">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="339.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text=">> For active a Hero ability press Z and X">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="386.0" styleClass="launcher_labels" stylesheets="@launcher-view.css" text=">> For active a Villain ability press M and N">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
