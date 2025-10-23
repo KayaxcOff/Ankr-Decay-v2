@@ -1,6 +1,6 @@
 # Ankr:Decay - v2.0
 
-## Ankr:Decay Game Engine (C++)
+## Mind Engine (C++)
 
 The game engine part of the project is developed in C++. It relies on the following libraries:
 
