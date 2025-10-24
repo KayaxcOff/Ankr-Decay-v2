@@ -40,7 +40,7 @@ void AnkrDecay::init(const std::string &title, const int width, const int height
         return;
     }
 
-    if (SDL_Surface* icon = IMG_Load(R"(C:\software\Cpp\projects\Ankr\Assets\images\logo\ankr_logo.jpg)")) {
+    if (SDL_Surface* icon = IMG_Load(R"(..\..\..\..\Assets\images\logo\ankr_logo.jpg)")) {
         SDL_SetWindowIcon(window, icon);
         SDL_FreeSurface(icon);
     } else {
@@ -61,12 +61,12 @@ void AnkrDecay::init(const std::string &title, const int width, const int height
     image_loader_ = std::make_unique<ImageLoader>(renderer);
 
     audio_manager_ = std::make_unique<AudioManager>();
-    audio_manager_->playMusic("main_theme", R"(C:\software\Cpp\projects\Ankr\Assets\music\mixkit-driving-ambition-32.mp3)");
+    audio_manager_->playMusic("main_theme", R"(..\..\..\..\Assets\music\mixkit-driving-ambition-32.mp3)");
 
     input_manager_ = std::make_unique<InputManager>();
 
     ankr_board_ =  std::make_unique<AnkrBoard>(image_loader_.get());
-    ankr_board_->loadMapTex(R"(C:\software\Cpp\projects\Ankr\Assets\images\map\ankr_map.jpeg)");
+    ankr_board_->loadMapTex(R"(..\..\..\..\images\map\ankr_map.jpeg)");
 
     ankr_debug_ = std::make_unique<AnkrDebug>(renderer);
     ankr_debug_->init(window);
@@ -87,7 +87,7 @@ void AnkrDecay::InitObject() {
     const vec2D pos_h {50.f/ppm, 50.f/ppm};
     entity_d _hero {
         physics_manager_->initializeBox(static_cast<float>(SCREEN_WIDTH)/2/ppm, (static_cast<float>(SCREEN_HEIGHT)-20.f)/ppm, pos_h.posX, pos_h.posY, true),
-        image_loader_->loadTexture(R"(C:\software\Cpp\projects\Ankr\Assets\images\characters\test\GitHub.png)")
+        image_loader_->loadTexture(R"(..\..\..\..\Assets\images\characters\test\GitHub.png)")
     };
     auto hero = std::make_unique<Aether>(_hero.body, pos_h.posX, pos_h.posY, _hero.texture, physics_manager_.get());
     heroes_.push_back(std::move(hero));
@@ -95,7 +95,7 @@ void AnkrDecay::InitObject() {
     const vec2D pos_v {100.f/ppm, 70.f/ppm};
     entity_d _villain {
         physics_manager_->initializeBox(static_cast<float>(SCREEN_WIDTH)/2/ppm, (static_cast<float>(SCREEN_HEIGHT)-20.f)/ppm, pos_v.posX, pos_v.posY, true),
-        image_loader_->loadTexture(R"(C:\software\Cpp\projects\Ankr\Assets\images\characters\test\chibi.png)")
+        image_loader_->loadTexture(R"(..\..\..\..\Assets\images\characters\test\chibi.png)")
     };
     auto villain = std::make_unique<DarkKnight>(_villain.body, pos_v.posX, pos_v.posY, _villain.texture, physics_manager_.get());
     villains_.push_back(std::move(villain));
