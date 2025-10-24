@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    static final String LOGO_PATH = "C:\\Users\\muham\\Downloads\\mind_logo.jpg";
+    static final String LOGO_PATH = "..\\..\\..\\..\\..\\..\\mind_logo.jpg";
 
     public static void main(String[] args) {
         Application.launch(Main.class, args);
